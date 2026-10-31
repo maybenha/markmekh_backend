@@ -27,8 +27,7 @@ public class PayslipHistory {
     @Column(name = "date", nullable = false)
     private String date;
 
-    @Lob
-    @Column(name = "pdf_data", columnDefinition = "LONGBLOB", nullable = false)
+    @Column(name = "pdf_data", columnDefinition = "BYTEA", nullable = false)
     private byte[] pdfData;
 
     @Column(name = "created_at", nullable = false, updatable = false)

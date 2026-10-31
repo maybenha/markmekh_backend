@@ -30,10 +30,10 @@ public class Employee {
     @Column(name = "full_name_en", nullable = false, length = 120)
     private String fullNameEn;
 
-    @Column(name = "profile_photo_url", columnDefinition = "LONGTEXT")
+    @Column(name = "profile_photo_url", columnDefinition = "TEXT")
     private String profilePhotoUrl;
 
-    @Column(name = "cover_photo_url", columnDefinition = "LONGTEXT")
+    @Column(name = "cover_photo_url", columnDefinition = "TEXT")
     private String coverPhotoUrl;
 
     @Column(length = 10)
